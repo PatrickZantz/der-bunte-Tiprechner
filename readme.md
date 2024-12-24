@@ -1,5 +1,7 @@
 # Trinkgeldrechner mit Weihnachtskugel-Animation
 
+![alt text](image.png)
+
 ## Beschreibung
 
 Dieses Projekt kombiniert einen praktischen Trinkgeldrechner mit einer festlichen Weihnachtskugel-Animation. Es bietet eine benutzerfreundliche Oberfläche zum Berechnen von Trinkgeldern und fügt gleichzeitig ein interaktives Element hinzu, bei dem Benutzer durch Drücken der Enter-Taste animierte Weihnachtskugeln auf dem Bildschirm erzeugen können.
@@ -28,6 +30,3 @@ Dieses Projekt kombiniert einen praktischen Trinkgeldrechner mit einer festliche
 ## Installation
 
 1. Klonen Sie das Repository: https://github.com/PatrickZantz/der-bunte-Tiprechner.git
-
-
-![alt text](image.png)
