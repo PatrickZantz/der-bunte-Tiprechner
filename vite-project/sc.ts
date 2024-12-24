@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btnClk = document.querySelector(".btnClk");
-  if (btnClk != null) btnClk.addEventListener("click", calcIT);
+  document.querySelector(".btnClk").addEventListener("click", function (event) {
+    event.preventDefault();
+    calcIT();
+  });
 
   const bill = document.getElementById("bill") as HTMLInputElement;
   const cnt = document.getElementById("count") as HTMLInputElement;
@@ -19,10 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const resTip = billNr * (service / 100);
     const resDiv = (billNr / cntNr) * (service / 100 + 1);
 
-    if (sumBill !== null) sumBill.textContent = `${res.toFixed(2)} € insg.`;
     if (sumTip !== null)
-      sumTip.textContent = `${resTip.toFixed(2)} € Trinkgeld `;
-    if (sum !== null) sum.textContent = `${resDiv.toFixed(2)} € pro Person `;
+      sumTip.textContent = `Gesamtbetrag: ${resTip.toFixed(2)} €`;
+    if (sum !== null) sum.textContent = `Pro Person: ${resDiv.toFixed(2)} €`;
+    if (sumBill !== null)
+      sumBill.textContent = `Trinkgeld: ${res.toFixed(2)} €`;
   }
 
   const canvas = document.getElementById("gameCanvas");

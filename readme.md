@@ -27,4 +27,7 @@ Dieses Projekt kombiniert einen praktischen Trinkgeldrechner mit einer festliche
 
 ## Installation
 
-1. Klonen Sie das Repository:
+1. Klonen Sie das Repository: https://github.com/PatrickZantz/der-bunte-Tiprechner.git
+
+
+![alt text](image.png)
