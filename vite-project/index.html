@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinkgeldrechner mit Ballspiel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./sc.ts"></script>
+  </head>
+
+  <body
+    class="bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col items-center justify-center min-h-screen p-6"
+  >
+    <main class="bg-gray-800 rounded-2xl shadow-2xl p-8 max-w-md w-full">
+      <h1
+        class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400 text-center mb-8"
+      >
+        Trinkgeldrechner
+      </h1>
+
+      <form class="space-y-6">
+        <div>
+          <label for="bill" class="block text-sm font-medium text-gray-300 mb-2"
+            >Rechnungsbetrag (€)</label
+          >
+          <input
+            id="bill"
+            type="number"
+            placeholder="0.00  "
+            class="block w-full text-right px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-teal-500 focus:border-transparent transition duration-300 ease-in-out text-white"
+          />
+        </div>
+
+        <div>
+          <label
+            for="count"
+            class="block text-sm font-medium text-gray-300 mb-2"
+            >Anzahl der Personen</label
+          >
+          <input
+            id="count"
+            type="number"
+            placeholder="1  "
+            class="block w-full text-right px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-teal-500 focus:border-transparent transition duration-300 ease-in-out text-white"
+          />
+        </div>
+
+        <div>
+          <label
+            for="service"
+            class="block text-sm font-medium text-gray-300 mb-2"
+            >Zufriedenheit mit dem Service</label
+          >
+          <select
+            class="block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg shadow-sm focus:ring-2 focus:ring-teal-500 focus:border-transparent transition duration-300 ease-in-out text-white text-right"
+            name="service"
+            id="service"
+          >
+            <option value="">Bitte auswählen...</option>
+            <option value="2">Unzufrieden (2%)</option>
+            <option value="10">Zufrieden (10%)</option>
+            <option value="20">Sehr zufrieden (20%)</option>
+          </select>
+        </div>
+
+        <button
+          name="btnClk"
+          class="btnClk w-full mt-8 bg-gradient-to-r from-teal-500 to-emerald-500 text-white py-4 px-6 rounded-lg font-semibold hover:from-teal-600 hover:to-emerald-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition duration-300 ease-in-out transform hover:scale-110"
+        >
+          Trinkgeld berechnen
+        </button>
+      </form>
+
+      <div class="mt-10 space-y-4 bg-gray-700 p-6 rounded-lg">
+        <div class="tip text-lg font-semibold text-gray-200">
+          Trinkgeld: <span class="float-right">0.00 €</span>
+        </div>
+        <div class="alles text-lg font-semibold text-gray-200">
+          Gesamtbetrag: <span class="float-right">0.00 €</span>
+        </div>
+        <div
+          class="sum text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400"
+        >
+          Pro Person: <span class="float-right">0.00 €</span>
+        </div>
+      </div>
+    </main>
+
+    <canvas
+      id="gameCanvas"
+      class="fixed top-0 left-0 w-full h-full pointer-events-none"
+    ></canvas>
+
+    <script>
+      // Trinkgeldrechner-Logik hier einfügen
+      // ...
+
+      // Ballspiel-Logik
+    </script>
+  </body>
+</html>
